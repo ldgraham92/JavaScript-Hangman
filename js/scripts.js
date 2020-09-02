@@ -13,7 +13,7 @@ let wordSelectArray = [
 ]
 // Word Random Selection
 let secretWord = wordSelectArray[Math.floor(Math.random() * wordSelectArray.length)];
-console.log(secretWord); // For Testing. Comment out or delete before Final Push
+//console.log(secretWord); // For Testing. Comment out or delete before Final Push
 
 // Guessed Letter Array - Correct
 let answerArray = []

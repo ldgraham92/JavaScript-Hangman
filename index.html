@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+
+    <!-- Scripts -->
+<script type="application/javascript" src="js/scripts.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<!-- Start New Game by adding Underscores on Page Load-->
+<body onload=NewGame()>
+    <h1>
+        Hangman Guessing Game!
+    </h1>
+    <h2>
+        <!-- Image that Updates as you pick wrong letters -->
+        <p><img src='./img/6.png'></p>
+
+        <!-- Text Box with Enter Working + Button to make Guess -->
+        <input id="guessed-letter" type="text" placeholder = "Enter a Guess">
+        <button value="guessed-letter" onclick="MakeGuess()">Make Guess</button>
+
+        <!-- Starts as underscores, changes if user enters correct letter-->
+        <p id="correct-guesses"></p>
+
+        <!-- Displays Chances Left -->
+        <p>Chances Left:</p>
+        <p id="chances-left"></p>
+
+        <!-- Incorrect Previous Guesses-->
+        <p>Incorrect Choices:</p>
+        <p id="incorrect-choices"></p>
+
+        <!-- Section is blank until user wins or loses. Displays appropriate data once this occurs-->
+        <p id="win-or-lose"></p>
+    
+    </h2>
+
+    <!-- Refresh page to start new game. There is probably a better way of doing this instead of window.location.reload(). Possibly wrap the entire game in a function and call that function on button press?-->
+    <h3 class = 'restart'>
+        <button onclick="window.location.reload();">Play Again / Restart</button>
+    </h3>
+
+    <footer>
+        &copy; Lindsey Graham 2020 - <a href=http://www.techcareers.ca>TECHCareers</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+body{
+    max-width: 800px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    font-family: 'Architects Daughter', cursive;
+}
+
+h1{
+    margin: 50px;
+    margin-bottom: 100px;
+    font-size: 45px;
+}
+
+h2 > input{
+    width: 90%;
+    color: darkslategray;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid #222;
+    background: none;
+    font-size: 15px;
+    outline: none;
+}
+
+h2 button{
+    margin: 10px;
+    background: darkslategrey;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+}
+
+h3 button{
+    margin: 10px;
+    background: darkslategrey;
+    color: whitesmoke;
+    font-size: 15px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+}

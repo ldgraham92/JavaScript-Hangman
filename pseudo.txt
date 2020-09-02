@@ -1,0 +1,25 @@
+assign var(word).tolower or random select from multiple words with math.random
+assign var(guesses) to 6 for fresh game
+display 0wrong image for new game
+
+get length of var(word) and place that many underscores in p class guessed-word 
+    IE) 
+        word = javascript
+        var(word).length = 10 (index 9)
+        var(underscores) = var(word).length underscores
+        p class guessed-word displays _ _ _ _ _ _ _ _ _ _
+
+while guesses = > 0
+    when user enters letter in to box, loop over var(word)
+    if 'enteredLetter.tolower' matches any letter in var(word)
+        replace underscores that match with guessed letter
+    else if entered letter !matches any letter in var(word)
+        guesses--
+        display next image (0wrong, 1wrong, 2wrong, etc)
+        add guessed word to previous-guessed paragraph
+    else if var(underscores) == var(word)
+        display You Win
+
+while guesses = 0
+    display "You Lose"
+    display "refresh" button to restart game (Title button 'New Game')
